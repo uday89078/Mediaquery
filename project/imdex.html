@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Column Boxes</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-color: #f4f4f4;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      max-width: 1200px;
+      justify-content: center;
+    }
+
+    .box {
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      text-align: center;
+      flex: 1 1 calc(33.333% - 40px); /* 3 columns layout */
+      max-width: calc(33.333% - 40px);
+      transition: transform 0.3s;
+    }
+
+    .box:hover {
+      transform: translateY(-10px);
+    }
+
+    .icon {
+      font-size: 40px;
+      color: #0078d7;
+      margin-bottom: 15px;
+    }
+
+    .title {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .content {
+      font-size: 16px;
+      color: #555;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .box {
+        flex: 1 1 calc(50% - 40px); /* 2 columns layout for tablets */
+        max-width: calc(50% - 40px);
+      }
+    }
+
+    @media (max-width: 480px) {
+      .box {
+        flex: 1 1 100%; /* Single column layout for mobile */
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="box">
+      <div class="icon">📦</div>
+      <div class="title">Box 1</div>
+      <div class="content">This is the content for box 1. Add more text as needed here.</div>
+    </div>
+    <div class="box">
+      <div class="icon">📁</div>
+      <div class="title">Box 2</div>
+      <div class="content">This is the content for box 2. Add more text as needed here.</div>
+    </div>
+    <div class="box">
+      <div class="icon">✨</div>
+      <div class="title">Box 3</div>
+      <div class="content">This is the content for box 3. Add more text as needed here.</div>
+    </div>
+  </div>
+</body>
+</html>
