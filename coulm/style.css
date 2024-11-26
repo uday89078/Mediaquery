@@ -1,0 +1,61 @@
+*{
+    margin: 10px;
+    padding: 0;
+}
+.parent{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.box1{
+    width: 240px;
+    height: 160px;
+    border: 2px solid black;
+    background-image: url("img/4613-2560x1704-desktop-hd-bike-wallpaper-image.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.box2{
+    width: 240px;
+    height: 160px;
+    border: 2px solid black;
+    background-image: url("img/15532.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.box3{
+    width: 240px;
+    height: 160px;
+    border: 2px solid black;
+    background-image: url("img/607899-3840x2160-desktop-4k-sports-bike-wallpaper-photo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.box4{
+    width: 240px;
+    height: 160px;
+    border: 2px solid black;
+    background-image: url("img/images.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.box5{
+    width: 240px;
+    height: 160px;
+    border: 2px solid black;
+    background-image: url("img/premium_photo-1661963826911-f369fa24c1a6.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+@media screen and (max-width: 767px) {
+    .parent{
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
